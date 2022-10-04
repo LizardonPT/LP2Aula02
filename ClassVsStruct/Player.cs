@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ClassVsStruct
 {
-    public struct Player
+    public class Player
     {
         public int Health {get; set;}
         public int Armor {get; set;}

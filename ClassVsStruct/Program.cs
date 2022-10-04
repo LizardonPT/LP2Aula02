@@ -17,12 +17,20 @@ namespace ClassVsStruct
             Console.WriteLine($"Player1 => Health: {player1.Health} Armor: {player1.Armor}");
             Console.WriteLine($"Player2 => Health: {player2.Health} Armor: {player2.Armor}");
 
-            player1.Health = 200;
-            player1.Armor = 200;
+            Console.WriteLine("---------------------------------------------");
+
+            //player1.Health = 200;
+            //player1.Armor = 200;
+
+            DoubleHP(ref player1);
 
             Console.WriteLine($"Player1 => Health: {player1.Health} Armor: {player1.Armor}");
             Console.WriteLine($"Player2 => Health: {player2.Health} Armor: {player2.Armor}");
-            
+        }
+
+        private static void DoubleHP(ref Player player)
+        {
+            player.Health *= 2;
         }
     }
 }
